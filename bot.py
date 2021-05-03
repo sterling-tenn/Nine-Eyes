@@ -19,6 +19,6 @@ async def on_message(message):
 
 if __name__ == "__main__":
     for extension in extensions:
-        client.load_extension(extension)
+        client.load_extension("cogs."+extension)
         print(f"Loaded extension: {extension}")
     client.run(BOT_TOKEN)
